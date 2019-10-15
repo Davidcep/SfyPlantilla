@@ -17,6 +17,15 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
+    flavorDimensions "default"
+    productFlavors{
+        free{
+            applicationIdSuffix ".free"
+        }
+        paid{
+            applicationIdSuffix ".paid"
+        }
+    }
     compileOptions {
         sourceCompatibility = 1.8
         targetCompatibility = 1.8
